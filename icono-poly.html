@@ -1,0 +1,25 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<polymer-element name="icono-poly" attributes="url image filter amount">
+	
+  <template>
+    <style>
+        :host>a img:hover {
+          filter: {{filter}}({{amount}});
+        	-webkit-filter: {{filter}}({{amount}});
+          -moz-filter: {{filter}}({{amount}});
+          -o-filter: {{filter}}({{amount}});
+          -ms-filter: {{filter}}({{amount}});
+        }
+    </style>
+    <a href="{{url}}" target="_blank"><img src="{{image}}"></img></a>
+  </template>
+  <script>
+    Polymer({
+    	amount:"90%",
+    	image: "https://blog.polymer-project.org/images/logos/p-logo.png",
+      filter: "grayscale",
+      url: "https://www.polymer-project.org/"
+    });
+  </script>
+</polymer-element>

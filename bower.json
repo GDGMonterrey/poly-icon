@@ -1,0 +1,13 @@
+{
+  "name": "poligdg",
+  "version": "1.0.0",
+  "authors": [
+    "dezkareid <elmaildeldezkareid@gmail.com>"
+  ],
+  "description": "Simple web component",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.5"
+  }
+}
